@@ -33,6 +33,10 @@
 			],
 			"styles": [
 				"extensions/K3Overlay/modules/ext.k3overlay.css"
+			],
+            "targets": [
+				"mobile",
+				"desktop"
 			]
 		}
 	},
