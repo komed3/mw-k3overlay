@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bangers&family=Handlee&family=Lora&family=Noto+Sans&family=Pacifico&family=Righteous&family=Share+Tech+Mono&family=Source+Code+Pro&family=Ultra&display=swap');
+
+#k3overlay {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #ffffff;
+	overflow-x: hidden;
+	overflow-y: auto;
+	z-index: 99;
+	-ms-user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
+	-ms-overflow-style: none;
+	overflow: -moz-scrollbars-none;
+}
+
+#k3overlay::-webkit-scrollbar {
+	display: none;
+}
+
+#k3overlay .text {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	max-width: 80%;
+	font-family: inherit;
+	font-size: 2em;
+	color: inherit;
+	transform: translate( -50%, -50% );
+}
+
+#k3overlay .text * {
+	color: inherit;
+	border: 0;
+}
+
+/* BUTTON */
+
+#k3overlay-close {
+	position: absolute;
+	top: 20px;
+	right: 50px;
+	font-family: 'Noto Sans', sans-serif;
+	font-size: 5em;
+	cursor: pointer;
+}
+
+/* FONTS */
+
+#k3overlay.fSansSerif {
+	font-family: 'Noto Sans', sans-serif;
+}
+
+#k3overlay.fSansSerif h1,
+#k3overlay.fSansSerif h2,
+#k3overlay.fSansSerif h3,
+#k3overlay.fSansSerif h4,
+#k3overlay.fSansSerif h5,
+#k3overlay.fSansSerif h6 {
+	font-family: 'Anton', sans-serif;
+}
+
+#k3overlay.fSerif {
+	font-family: 'Lora', serif;
+}
+
+#k3overlay.fSerif h1,
+#k3overlay.fSerif h2,
+#k3overlay.fSerif h3,
+#k3overlay.fSerif h4,
+#k3overlay.fSerif h5,
+#k3overlay.fSerif h6 {
+	font-family: 'Ultra', serif;
+}
+
+#k3overlay.fMonospace {
+	font-family: 'Source Code Pro', monospace;
+}
+
+#k3overlay.fMonospace h1,
+#k3overlay.fMonospace h2,
+#k3overlay.fMonospace h3,
+#k3overlay.fMonospace h4,
+#k3overlay.fMonospace h5,
+#k3overlay.fMonospace h6 {
+	font-family: 'Share Tech Mono', monospace;
+}
+
+#k3overlay.fHandwriting {
+	font-family: 'Handlee', serif;
+}
+
+#k3overlay.fHandwriting h1,
+#k3overlay.fHandwriting h2,
+#k3overlay.fHandwriting h3,
+#k3overlay.fHandwriting h4,
+#k3overlay.fHandwriting h5,
+#k3overlay.fHandwriting h6 {
+	font-family: 'Pacifico', serif;
+}
+
+#k3overlay.fDisplay {
+	font-family: 'Righteous', sans-serif;
+}
+
+#k3overlay.fDisplay h1,
+#k3overlay.fDisplay h2,
+#k3overlay.fDisplay h3,
+#k3overlay.fDisplay h4,
+#k3overlay.fDisplay h5,
+#k3overlay.fDisplay h6 {
+	font-family: 'Bangers', sans-serif;
+}
+
+/* COLORS */
+
+#k3overlay.cBlack {
+	color: #ffffff;
+	background-color: #000000;
+}
+
+#k3overlay.cBlue {
+	color: #ffffff;
+	background-color: #154d8a;
+}
+
+#k3overlay.cCoral {
+	color: #ffffff;
+	background-color: #ff6f61;
+}
+
+#k3overlay.cGreen {
+	color: #ffffff;
+	background-color: #009b77;
+}
+
+#k3overlay.cPink {
+	color: #ffffff;
+	background-color: #b518a3;
+}
+
+#k3overlay.cPurple {
+	color: #ffffff;
+	background-color: #6d3e80;
+}
+
+#k3overlay.cRed {
+	color: #ffffff;
+	background-color: #dd4124;
+}
+
+#k3overlay.cTurquoise {
+	color: #ffffff;
+	background-color: #45b8ac;
+}
+
+#k3overlay.cYellow {
+	color: #000000;
+	background-color: #edc524;
+}

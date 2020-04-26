@@ -1,0 +1,40 @@
+{
+	"name": "K3Overlay",
+	"version": "1.0.0",
+	"author": [
+		"[https://labs.komed3.de/ Paul Köhler (komed3)]"
+	],
+	"url": "https://labs.komed3.de/k3overlay/",
+	"descriptionmsg": "k3overlay-desc",
+	"license-name": "MIT",
+	"type": "other",
+	"requires": {
+		"MediaWiki": ">= 1.31.0"
+	},
+	"config": {
+		"K3Overlay_cexp": 10800,
+		"K3Overlay_gout": [ "sysop" ]
+	},
+	"MessagesDirs": {
+		"K3Overlay": [
+			"i18n"
+		]
+	},
+	"AutoloadClasses": {
+		"K3OverlayHooks": "K3Overlay.hooks.php"
+	},
+	"Hooks": {
+		"BeforePageDisplay": "K3OverlayHooks::onBeforePageDisplay"
+	},
+	"ResourceModules": {
+		"ext.k3overlay": {
+			"packageFiles": [
+				"extensions/K3Overlay/modules/ext.k3overlay.js"
+			],
+			"styles": [
+				"extensions/K3Overlay/modules/ext.k3overlay.css"
+			]
+		}
+	},
+	"manifest_version": 1
+}
