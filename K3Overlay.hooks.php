@@ -7,11 +7,17 @@
 			global $wgUser, $wgK3Overlay_cexp, $wgK3Overlay_gout;
 			
 			// show overlay only after cookie has expired
-			if( !array_key_exists( 'k3overlay', $_COOKIE ) ) {
+			if(
+				!array_key_exists( 'k3overlay', $_COOKIE ) ||
+				$_COOKIE[ 'k3overlay' ] != $wgUser->getId()
+			) {
 				
 				// hide overlay for specific user groups or if null
-				if( strlen( trim( $out->msg( 'k3overlay-text' )->plain() ) ) == 0 ||
-				    !array_intersect( $wgK3Overlay_gout, $wgUser->getGroups() ) ) {
+				if(
+					$wgUser->isLoggedIn() &&
+					strlen( trim( $out->msg( 'k3overlay-text' )->plain() ) ) > 0 &&
+					!array_intersect( $wgK3Overlay_gout, $wgUser->getGroups() )
+				) {
 					
 					$out->addHTML('
 						<div id="k3overlay-text">
@@ -26,7 +32,7 @@
 					
 					// disable overlay output for a certain time
 					setcookie(
-						'k3overlay', '1',
+						'k3overlay', $wgUser->getId(),
 						time() + $wgK3Overlay_cexp
 					);
 					

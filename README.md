@@ -16,6 +16,26 @@ wfLoadExtension( 'K3Overlay' );
 
 Now you can check via `Special:Version` whether the extension was installed successfully.
 
+## Usage
+
+To display an overlay, fill the template (`MediaWiki:k3overlay-text`) with Wikitext.
+
+If the settings have not been changed, the overlay will not be visible to administrators (`sysop`).
+
+If the overlay should no longer be displayed, simply empty the template.
+
+## Settings
+
+The following setting options are available:
+
+```
+// Time in seconds until the overlay is displayed again
+$wgK3Overlay_cexp = 10800
+
+// Array with user groups to which the overlay should not be displayed
+$wgK3Overlay_gout = [ "sysop" ]
+```
+
 ## Supported languages
 
 - English

@@ -1,6 +1,6 @@
 {
 	"name": "K3Overlay",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"author": [
 		"[https://labs.komed3.de/ Paul Köhler (komed3)]"
 	],
@@ -28,7 +28,7 @@
 	},
 	"ResourceModules": {
 		"ext.k3overlay": {
-			"packageFiles": [
+			"scripts": [
 				"extensions/K3Overlay/modules/ext.k3overlay.js"
 			],
 			"styles": [

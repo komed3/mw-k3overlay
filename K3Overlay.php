@@ -4,7 +4,7 @@
 	 * K3Overlay
 	 * 
 	 * author		komed3
-	 * version		1.0.0
+	 * version		1.0.1
 	 * date			2020-04-26
 	 * modified		2020-04-26
 	 * license		MIT
