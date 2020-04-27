@@ -1,7 +1,7 @@
 $( document ).ready( function() {
-	
-	var colorClasses = [ 'cBlack', 'cBlue', 'cCoral', 'cGreen', 'cPink', 'cPurple', 'cRed', 'cTurquoise', 'cYellow' ],
-		fontClasses = [ 'fSansSerif', 'fSerif', 'fMonospace', 'fHandwriting', 'fDisplay' ];
+    
+    var colorClasses = [ 'cBlack', 'cBlue', 'cCoral', 'cGreen', 'cMint', 'cPink', 'cPurple', 'cRed', 'cTurquoise', 'cYellow' ],
+        fontClasses =  [ 'fSansSerif', 'fSerif', 'fMonospace', 'fHandwriting', 'fDisplay' ];
 	
 	// create Overlay
 	$( 'body' ).append( '<div id="k3overlay">' + $( '#k3overlay-text' ).html() + '</div>' );

@@ -1,6 +1,6 @@
 {
 	"name": "K3Overlay",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"author": [
 		"[https://labs.komed3.de/ Paul Köhler (komed3)]"
 	],
@@ -12,8 +12,9 @@
 		"MediaWiki": ">= 1.31.0"
 	},
 	"config": {
-		"K3Overlay_cexp": 10800,
-		"K3Overlay_gout": [ "sysop" ]
+		"K3O_cookie_expires": 10800,
+        "K3O_only_logged_in": false,
+		"K3O_groups_rest": [ "sysop", "bot" ]
 	},
 	"MessagesDirs": {
 		"K3Overlay": [

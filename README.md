@@ -1,4 +1,4 @@
-# MediaWiki Extension: K3Overlay
+# MediaWiki Extension: K3Overlay v. 1.0.2
 
 Creates a simple overlay for the wiki at each page view for defined user groups and time periods.
 
@@ -29,11 +29,14 @@ If the overlay should no longer be displayed, simply empty the template.
 The following setting options are available:
 
 ```
-// Time in seconds until the overlay is displayed again
-$wgK3Overlay_cexp = 10800
+// time in seconds until the overlay is displayed again
+$wgK3O_cookie_expires = 10800;
 
-// Array with user groups to which the overlay should not be displayed
-$wgK3Overlay_gout = [ "sysop" ]
+// if "true" the overlay is only shown to logged in users
+$wgK3O_only_logged_in = false;
+
+// array with user groups to which the overlay should not be displayed
+$wgK3O_groups_rest = [ "sysop", "bot" ];
 ```
 
 ## Supported languages
